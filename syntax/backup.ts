@@ -66,3 +66,33 @@ for (let i = 0; i < product2s.length; i++){
 
   console.log(product2s[i]);
 }
+
+//lesson27: function
+function sum(a: number, b: number): number {
+  return a + b;
+};
+
+console.log("check sum", sum(6, 9));
+
+const abs = (a: number, b: number) => {
+  return Math.abs(a - b);
+}
+
+console.log("chek abs : ", abs(2, 5));
+
+//lesson28: function type
+const sum3 = (a: number, b: number): number => {
+  return a + b;
+}
+
+console.log("check sum3: ", sum3(8, 7));
+
+//lesson29: optional parameters
+const sum4 = (x: number, y: number, z?: number) => {
+  if (z) {
+    return x + y + z;
+  }
+  return x + y;
+}
+
+console.log("check sum4: ", sum4(1, 2, 3));
